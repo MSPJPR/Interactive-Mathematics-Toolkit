@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Mathematics Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Visualizations -->
+</head>
+<body>
+    <h1>Interactive Mathematics Toolkit</h1>
+
+    <section>
+        <h2>Vector Algebra Calculator</h2>
+        <input type="text" id="vector1" placeholder="Enter vector 1 (e.g., 1,2,3)">
+        <input type="text" id="vector2" placeholder="Enter vector 2 (e.g., 4,5,6)">
+        <button onclick="calculateDotProduct()">Calculate Dot Product</button>
+        <button onclick="calculateCrossProduct()">Calculate Cross Product</button>
+        <button onclick="calculateMagnitude()">Calculate Magnitude</button>
+        <p id="result"></p>
+    </section>
+
+    <section>
+        <h2>Probability Distribution Visualization</h2>
+        <button onclick="generateRandomDistribution()">Generate Random Distribution</button>
+        <canvas id="distributionChart" width="400" height="200"></canvas>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
